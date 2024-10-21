@@ -1,11 +1,2 @@
 #!/bin/bash
-
-
-
-if [ -z "$CFILE" ]; then
-    echo "Error: la variable CFILE no está configurada."
-    exit 1
-fi
-
-
 gcc -S "$CFILE" -o "$(basename "$CFILE" .c).s"
