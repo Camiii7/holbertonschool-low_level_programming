@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    int num;
+	int num;
 
 	/* Imprime los nuºmeros del 0 al 9 */
 	for (num = 0; num < 10; num++)
@@ -17,7 +17,7 @@ int main(void)
 
 	/* Imprime las letras de 'a' a f */
 	for (num = 'a'; num <= 'f'; num++)
-       	{
+	{
 	putchar(num);
 	}
 
