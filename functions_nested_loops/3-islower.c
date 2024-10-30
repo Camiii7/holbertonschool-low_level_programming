@@ -6,8 +6,10 @@
  * Return: 1 si es minuscula, 0 otro caso.
  */
 	int _islower(int c)
+
 	{
-	if (c >= 'a' && c <= 'z')
+	if (_islower(c))
 	return (1);
+	else
 	return (0);
 }
