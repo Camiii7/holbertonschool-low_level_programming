@@ -4,7 +4,7 @@
  * _strncat - Concatena dos cadenas hasta n caracter
  * @dest: Puntero a la cadena de destino.
  * @src: Puntero a la cadena fuente
-*/
+ */
 
 char *_strncat(char *dest, char *src, int n)
 {
