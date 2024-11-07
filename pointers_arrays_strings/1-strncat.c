@@ -1,26 +1,24 @@
 #include "main.h"
 
 /**
- * _strncat - Concatena dos cadenas hasta n caracter
- * @dest: Puntero a la cadena de destino.
- * @src: Puntero a la cadena fuente
+ * _strncat - concatena dos cadenas
+ * @dest: cadena de destino
+ * @src: cadena fuente
+ * @n: número de bytes a utilizar de src
+ * 
+ * Return: puntero a la cadena resultante en dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
-	while (*dest != '\0')
-	{
-	dest++;
-	}
+	int dest_len = 0, i;
 
-	while (n-- > 0 && *src != '\0')
-	{
-	*dest = *src;
-	dest++;
-	src++;
-	}
+	while (dest[dest_len] != '\0')
+	dest_len++;
 
-	*dest = '\0';
+	for (i = 0; i < n && src[i] != '\0'; i++)
+	dest[dest_len + i] = src[i];
 
-	return (dest);
+	dest[dest_len + i] = '\0';
+
+	return dest;
 }
