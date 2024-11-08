@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _memcpy - Copia un a¡rea de memoria
  * @dest: Puntero al a¡rea de memoria de destino
