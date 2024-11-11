@@ -2,7 +2,7 @@
 
 /**
  * int _strlen_recursion - Funcion que devuelve la longitud de una cadena
- * @s: La cadena
+ * @s: Puntero a la cadena de 'x' caracteres
  * Return: 0
  */
 
