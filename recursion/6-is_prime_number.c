@@ -17,10 +17,11 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime_helper - Funcion auxiliar para verificar si un num es primo
+ * is_prime_helper - Funcion auxiliar para verificar si un numero es primo
  * @n: Num a verificar
- * @i: Posible divisor
- * Return: 1 si es primo, sino 0
+ * @i: Posible divisor que se incrementa recursivamente
+ *
+ * Return: 1 si es primo, de lo contrario 0
  */
 
 int is_prime_helper(int n, int i)
