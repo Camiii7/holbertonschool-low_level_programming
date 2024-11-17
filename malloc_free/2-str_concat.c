@@ -2,44 +2,40 @@
 #include <stdlib.h>
 
 /**
- * str_concat - Funcion que concatena dos cadenas
- * @s1: La primera cadena
- * @s2: La segunda cadena
- * Return: Un puntero a la nueva cadena o NULL
+ * str_concat - Concatena 2 cadenas de caracteres
+ * @s1: Primer cadena
+ * @s2: Segunda cadena
+ * Return: Puntero a la nueva cadena concatenada, o NULL si hubo un error
  */
-
 
 char *str_concat(char *s1, char *s2)
 {
-
 	char *concat_str;
-	int len1 = 0, len2 = 0, i, j;
+	unsigned int len1 = 0, len2 = 0, i, j;
 
 	if (s1 == NULL)
-	{
-		s1= "";
-	}
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-		/** Itera sobre cada caracter de s1 */
+	while (s1[len1] != '\0')
+		len1++;
 
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-		/** Itera sobre cada caracter s2 */
+	while (s2[len2] != '\0')
+		len2++;
 
-	concat_str = malloc(sizeof(char) * (len1 + len2 + 1));
+	concat_str = malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (concat_str == NULL)
-	{
 		return (NULL);
-	}
 
-	for (i = 0; i < len1 ; i++)
+	for (i = 0; i < len1; i++)
 		concat_str[i] = s1[i];
 
 	for (j = 0; j < len2; j++)
 		concat_str[i + j] = s2[j];
 
-	concat_str[len1 + len2] = '\0';
+	concat_str[i + j] = '\0';
 
 	return (concat_str);
 }
