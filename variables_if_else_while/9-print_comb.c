@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
- *
- * Return: Always 0 (Success)
+ * main - Imprimir todas las ppsibles combinaciones
+ * Return: 0
  */
+
 int main(void)
 {
 	int num;
@@ -13,11 +13,12 @@ int main(void)
 	{
 	putchar(num + '0');
 
-	if (num != 9) /* Si no es 9, imprime coma y espacio */
+	if (num != 9)
 	{
-	putchar(',');
-	putchar(' ');
+		putchar(',');
+		putchar(' ');
 	}
+	
 	}
 
 	putchar('\n');
