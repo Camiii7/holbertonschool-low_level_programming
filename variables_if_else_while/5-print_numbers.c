@@ -2,9 +2,9 @@
 
 /**
  * main - Imprime todos los numeros de un solo digito en base 10
- *
- * Return: Always 0
+ * Return: 0
  */
+
 int main(void)
 {
 	int num;
