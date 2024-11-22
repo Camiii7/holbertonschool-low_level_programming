@@ -2,7 +2,7 @@
 
 /**
  * main - Imprimir el alfabeto, excepto 'q' y 'e'.
- * Return: Always 0
+ * Return: 0
  */
 
 int main(void)
@@ -11,13 +11,13 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-	if (letter != 'q' && letter != 'e')
-	{
-	putchar(letter);
+		if (letter != 'q' && letter != 'e')
+		{
+			putchar(letter);
+		}
 	}
-	}
-	putchar('\n');
+		putchar('\n');
 
-	return (0);
+		return (0);
 }
 
