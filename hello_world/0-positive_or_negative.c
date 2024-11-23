@@ -18,14 +18,14 @@ int main(void)
     	{
         	printf("%d es positivo\n", n);
     	}
-    	else if (n == 0)
-    	{
-        	printf("%d es cero\n", n);
-    	}
-	else
-    	{
-		printf("%d es negativo\n", n);
-    	}
+    		else if (n == 0)
+    		{
+        		printf("%d es cero\n", n);
+    		}
+			else
+    			{
+				printf("%d es negativo\n", n);
+    			}
 
-	return (0);
+		return (0);
 }
