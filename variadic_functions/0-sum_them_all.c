@@ -3,7 +3,7 @@
 /**
  * sum_them_all - Suma todos los parametros proporcionados
  * @n: Numero de parametros a sumar
- * Return: la suma de todos los parámetros, o 0 si n es 
+ * Return: la suma de todos los parámetros, o 0 si n e 0
  */
 
 int sum_them_all(const unsigned int n, ...)
