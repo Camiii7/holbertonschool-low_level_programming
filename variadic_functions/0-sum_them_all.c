@@ -1,8 +1,5 @@
 #include <stdarg.h>
 
-#ifndef VARIADIC_FUNCTIONS_H
-#define VARIADIC_FUNCTIONS_H
-
 /**
  * sum_them_all - Suma todos los parametros proporcionados
  * @n: Numero de parametros a sumar
@@ -28,5 +25,3 @@ int sum_them_all(const unsigned int n, ...)
 	va_end(args);
 	return (sum);
 }
-
-#endif
