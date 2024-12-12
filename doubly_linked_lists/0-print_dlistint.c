@@ -13,11 +13,12 @@ size_t print_dlistint(const dlistint_t *h)
 	size_t count = 0;
 
 	while (h != NULL) /* Se ejecuta mientras h no sea NULL */
-    {
-	printf("%d\n", h->n);  /* Imprime el valor del nodo */
-	count++;               /* Incrementa el contador  */
-	h = h->next;            /* Avanza al siguiente nodo */
-    }
+	{
 
-	return count;  /* Devuelve el número de nodo*/
+		printf("%d\n", h->n);  /* Imprime el valor del nodo */
+		count++;               /* Incrementa el contador  */
+		h = h->next;            /* Avanza al siguiente nodo */
+	}
+
+	return (count);  /* Devuelve el número de nodo*/
 }
